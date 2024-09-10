@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App | CodingNepal</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Weather App</h1>
+  </header>
+  <div class="container">
+    <div class="search-section" >
+      <div class="input-wrapper" >
+        <input type="search" placeholder="Enter a city name" id="search-input">
+      </div>
+      <button class="location-button" >
+        <img height="50px" width="50px" src="https://thumbs.dreamstime.com/b/outline-location-icon-gps-pointer-map-pin-navigator-guide-vector-line-simple-button-black-pictogram-isolated-white-125338139.jpg" alt="">
+      </button>
+    </div>
+    <button class="get-weather-button" onclick="fetchWeather()">
+        Get Weather
+      </button>
+    
+      <div id="current-weather">
+        <h2 id="city"></h2>
+        <img src="" id="icon" alt="icon">
+        <h2 id="temperature">00<span>°C</span></h2>
+        <h4 id="description" style="color: black;margin-top: 10%;font-size: large;text-align: center;"></h4>
+      </div>
+     
+   
+   
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>

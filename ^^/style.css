@@ -1,0 +1,191 @@
+/* Importing Google Fonts - Montserrat */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("https://t4.ftcdn.net/jpg/09/56/29/45/240_F_956294529_6aUxVgGsurbgL6kW78UuhyJy02MLT81M.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0; /* Remove default margin */
+  }
+  
+  header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0; /* Adjust space around the h1 */
+    background: rgba(255, 255, 255, 0.7); /* Optional: add background for better readability */
+  }
+  
+  .container {
+    flex-grow: 1;
+    max-width: 425px;
+    border-radius: 10px;
+    position: relative;
+    background-image: url("https://news-tunisia.tunisienumerique.com/wp-content/uploads/2024/07/FR-MG-ENTRETIEN-GHANNOUCHI-54-450x270.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px; /* Added padding inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better contrast */
+  }
+  
+  .search-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .search-section .input-wrapper {
+    height: 54px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .search-section .input-wrapper span {
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  
+  .search-section #search-input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    text-transform: uppercase;
+    padding: 0 20px 0 50px;
+    border: 1px solid #beb0ff;
+    background: #fff;
+    transition: 0.1s ease;
+  }
+  
+  .search-section #search-input:focus {
+    border-color: #5f41e4;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.14);
+  }
+  
+  .search-section #search-input::placeholder {
+    text-transform: none;
+  }
+  
+  .search-section .location-button {
+    height: 54px;
+    width: 56px;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #fff;
+    color: #5f41e4;
+    border: 1px solid #beb0ff;
+    transition: 0.3s ease;
+  }
+  
+  .search-section .location-button:hover {
+    color: #fff;
+    background: #5f41e4;
+    border-color: #5f41e4;
+  }
+  
+  .search-section .location-button img {
+    width: 100%; /* Ensure the icon fits inside the button */
+  }
+  
+  button.get-weather-button {
+  margin-left: 100px;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 12px 20px;
+    background-color:#fff; /* Vibrant background color */
+    color: black; /* Text color */
+    margin-top: 20px; /* Space above the button */
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button.get-weather-button:hover {
+    background-color: #7e6361; /* Darker shade on hover */
+    border-color: #0b0a55; /* Border color on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  }
+  
+  button.get-weather-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(255, 111, 97, 0.5); /* Custom focus outline */
+  }
+  
+  
+  
+   #current-weather {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: rgb(189, 200, 209);
+    margin-left: 40px;
+    margin-top: 80px;
+    text-align: center
+  }
+  
+  #current-weather #icon {
+    width: 140px;
+    aspect-ratio: 1;
+    margin-left: 30px;
+  }
+  
+  #current-weather #temperature #city {
+    font-size: 3.38rem;
+    margin: 23px 0;
+    display: flex;
+  }
+  
+  #current-weather #temperature span {
+    font-size: 1.56rem;
+    font-weight: 500;
+    margin: 5px 0 0 2px;
+  }
+  
+  #current-weather .input-wrapper {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+  
+  /* Responsive media query code for small screens */
+  @media (max-width: 624px) {
+    body {
+      padding: 15px;
+    }
+  
+    .container {
+      padding: 15px;
+    }
+  
+    .search-section {
+      padding: 15px;
+    }
+  
+   
+    button.get-weather-button {
+      padding: 10px 18px; /* Adjust padding for smaller screens */
+    }
+  }
+  
